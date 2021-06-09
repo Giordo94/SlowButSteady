@@ -7,5 +7,21 @@
  * in the user manual at https://docs.gradle.org/7.0.2/userguide/multi_project_builds.html
  */
 
+//import de.fayard.refreshVersions.bootstrapRefreshVersions
+
+plugins {
+    // See https://jmfayard.github.io/refreshVersions
+    id("de.fayard.refreshVersions") version "0.10.0"
+}
+
+/*
+buildscript {
+    repositories { gradlePluginPortal() }
+    dependencies.classpath("de.fayard.refreshVersions:refreshVersions:0.9.7")
+}
+
+bootstrapRefreshVersions()
+*/
+
 rootProject.name = "SlowButSteady"
 include("app")
